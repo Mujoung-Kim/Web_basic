@@ -1,0 +1,7 @@
+.grid-item {
+	color: white;
+	background-color: red;
+}
+.grid-item:nth-child(2n) {
+	background-color: orange;
+}
