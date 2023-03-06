@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ScrollToByBehavior</title>
+	<style>
+		body{
+		  width:5000px;
+		  height:5000px;
+		  background:linear-gradient(#e66465, #9198e5);
+		}
+		div{
+		  position:fixed;
+		  top:10px; 
+		  left:10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button onclick="sBo()">scrollBo(4000)</button>
+		<button onclick="sTo()">scrollTo(100)</button>
+		<button onclick="sBy()">scrollBy(200)</button>
+		<button onclick="sUp()">scrollBy(-200)</button>
+	</div>
+	<script>
+		function sBo() {
+		  // window.scrollTo({top:4000});
+		  window.scrollTo({top:4000, behavior:'smooth'});
+		}
+		function sBy() {
+		  // window.scrollBy({top:600});
+		  window.scrollBy({top:600, behavior:'smooth'});
+		}
+		function sTo() {
+		  window.scrollTo({top:100, behavior:'smooth'});
+		}
+		function sUp() {
+		  window.scrollBy({top:-600, behavior:'smooth'})
+		}
+	</script>
+</body>
+</html>
