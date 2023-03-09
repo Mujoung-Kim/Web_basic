@@ -31,6 +31,10 @@ header .container {
 	align-items: center;
 	width: 100%;
 }
+header.active {
+	background-color: rgba(0, 0, 0);
+	animation: fadeIn 0.5s ease-in-out;
+}
 header nav ul {
 	display: flex;
 }
@@ -50,6 +54,16 @@ header h1 button {
 header nav ul li button {
 	font-size: 1.2rem;
 	color: white;
+}
+
+/* header keyframe */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* main */
@@ -419,4 +433,27 @@ section.contact .contact-me .right button {
 	section .title h2 {
 		font-size: 3rem;
 	}
+}
+
+/* add icon */
+.notion {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.473rem;
+	margin-right: 0.2rem;
+	font-weight: 400;
+	background-color: transparent;
+	background-image: url('/data/semi/images/notion.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.kotlin {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.473rem;
+	font-weight: 400;
+	background-color: transparent;
+	background-image: url('/data/semi/images/kotlin.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
